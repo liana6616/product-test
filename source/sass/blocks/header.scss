@@ -1,0 +1,140 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+
+  @media (min-width: $min-width-tablet) {
+    padding: 40px 200px;
+  }
+}
+
+.header__logo {
+  display: block;
+  width: 60px;
+  height: 60px;
+
+  @media (min-width: $min-width-tablet) {
+    width: 119px;
+    height: 119px;
+  }
+}
+
+.header__nav {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 5px;
+
+  a {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 16px;
+    letter-spacing: 0.3px;
+    text-decoration: none;
+    color: $base-light;
+  }
+
+  span {
+    font-size: 12px;
+    line-height: 12px;
+    color: $base-dark;
+    text-decoration: underline;
+  }
+
+  @media (min-width: $min-width-tablet) {
+    flex-direction: row;
+    align-items: center;
+    gap: 113.67px;
+    font-size: 16px;
+    line-height: 20.8px;
+
+    a {
+      font-size: 25px;
+      line-height: 24px;
+    }
+  
+    span {
+      font-size: 16px;
+      line-height: 16px;
+    }
+  }
+}
+
+.header__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 5px;
+
+  @media (min-width: $min-width-tablet) {
+    gap: 10px;
+  }
+}
+
+.header__list {
+  display: none;
+  margin: 0;
+  padding: 0;
+
+  @media (min-width: $min-width-tablet) {
+    display: flex;
+    min-height: 21px;
+    list-style: none;
+    gap: 50px;
+  }
+}
+
+.header__menu {
+  display: none;
+
+  @media (min-width: $min-width-tablet) {
+    position: relative;
+    display: block;
+    padding: 13px 20px 13px 59px;
+    font-size: 16px;
+    line-height: 20.8px;
+    background: $base-dark;
+    color: $base-light;
+    border: none;
+
+    &::after {
+      position: absolute;
+      content: "";
+      top: 15%;
+      left: 20px;
+      width: 24px;
+      height: 24px;
+      margin: 4px 3px;
+      mask-image: url("/__spritemap#sprite-burger-open-view");
+      mask-repeat: no-repeat;
+      background-color: $base-light;
+      transform: rotate(180deg)
+    }
+  }
+}
+
+.header__button {
+  position: relative;
+  width: 24px;
+  height: 24px;
+  background: none;
+  border: none;
+
+  &::after {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 24px;
+    height: 23px;
+    mask-image: url("/__spritemap#sprite-burger-open-view");
+    mask-repeat: no-repeat;
+    background-color: $base-light;
+    z-index: 1;
+  }
+
+  @media (min-width: $min-width-tablet) {
+    display: none;
+  }
+}
