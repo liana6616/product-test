@@ -3,7 +3,7 @@
   width: $min-width-mobile;
   background: linear-gradient(180deg, rgba(0, 0, 0, 0) 89.35%, #090D11 100%);
   background: $base-alt-dark;
-  z-index: 1;
+  z-index: 2;
 
   &::before {
     position: absolute;
