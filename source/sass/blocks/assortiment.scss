@@ -1,10 +1,11 @@
 .assortiment {
   padding: 0 20px;
   background: $base-alt-dark;
-
+  width: $min-width-mobile;
 
   @media (min-width: $min-width-tablet) {
     position: relative;
+    width: $min-width-tablet;
     padding: 0 200px;
     background: linear-gradient(180deg, rgba(0, 0, 0, 0.85) 0%, rgba(0, 0, 0, 0) 29.2%),
     linear-gradient(0deg, rgba(0, 0, 0, 0.85) 0.03%, rgba(0, 0, 0, 0) 17.07%),
@@ -18,7 +19,7 @@
       width: $min-width-tablet;
       height: 1346.33px;
       margin: 0 auto;
-      background-image: image-set("../../img/bg-2@1x.jpg" 1x, "../../img/bg-2@2x.jpg" 2x, "../../img/bg-2@1x.webp" 1x, "../../img/bg-2@2x.webp" 2x);
+      background-image: image-set("/img/bg-2@1x.jpg" 1x, "/img/bg-2@2x.jpg" 2x, "/img/bg-2@1x.webp" 1x, "/img/bg-2@2x.webp" 2x);
       background-repeat: no-repeat;
       z-index: -1;
     }
@@ -101,6 +102,7 @@
   width: 96px;
   padding: 13px 0;
   border: 2px dashed $base-alt;
+  cursor: pointer;
 
   &::after {
     position: relative;
@@ -175,7 +177,7 @@
     left: 0;
     width: 150px;
     height: 108.5px;
-    background-image: image-set("../../img/meat.png" 1x, "../../img/meat@2x.png" 2x, "../../img/meat.webp" 1x, "../../img/meat@2x.webp" 2x);
+    background-image: image-set("/img/meat@1x.png" 1x, "/img/meat@2x.png" 2x, "/img/meat@1x.webp" 1x, "/img/meat@2x.webp" 2x);
     background-repeat: no-repeat;
   }
 
@@ -230,7 +232,7 @@
 
       &::before {
         margin-left: -107px;
-        background-image: image-set("../../img/piece-meat-1.png" 1x, "../../img/piece-meat-1@2x.png" 2x, "../../img/piece-meat-1.webp" 1x, "../../img/piece-meat-1@2x.webp" 2x);
+        background-image: image-set("/img/piece-meat-1@1x.png" 1x, "/img/piece-meat-1@2x.png" 2x, "/img/piece-meat-1@1x.webp" 1x, "/img/piece-meat-1@2x.webp" 2x);
       }
     }
 
@@ -241,7 +243,7 @@
 
       &::before {
         margin-left: -110px;
-        background-image: image-set("../../img/piece-meat-2.png" 1x, "../../img/piece-meat-2@2x.png" 2x, "../../img/piece-meat-2.webp" 1x, "../../img/piece-meat-2@2x.webp" 2x);
+        background-image: image-set("/img/piece-meat-2@1x.png" 1x, "/img/piece-meat-2@2x.png" 2x, "/img/piece-meat-2@1x.webp" 1x, "/img/piece-meat-2@2x.webp" 2x);
       }
     }
 
@@ -251,7 +253,7 @@
 
       &::before {
         margin-left: 280px;
-        background-image: image-set("../../img/piece-meat-3.png" 1x, "../../img/piece-meat-3@2x.png" 2x, "../../img/piece-meat-3.webp" 1x, "../../img/piece-meat-3@2x.webp" 2x);
+        background-image: image-set("/img/piece-meat-3@1x.png" 1x, "/img/piece-meat-3@2x.png" 2x, "/img/piece-meat-3@1x.webp" 1x, "/img/piece-meat-3@2x.webp" 2x);
       }
     }
 
@@ -262,7 +264,7 @@
 
       &::before {
         margin-left: -107px;
-        background-image: image-set("../../img/piece-meat-12.png" 1x, "../../img/piece-meat-12@2x.png" 2x, "../../img/piece-meat-12.webp" 1x, "../../img/piece-meat-12@2x.webp" 2x);
+        background-image: image-set("/img/piece-meat-12@1x.png" 1x, "/img/piece-meat-12@2x.png" 2x, "/img/piece-meat-12@1x.webp" 1x, "/img/piece-meat-12@2x.webp" 2x);
       }
     }
 
@@ -273,7 +275,7 @@
 
       &::before {
         margin-left: 280px;
-        background-image: image-set("../../img/piece-meat-4.png" 1x, "../../img/piece-meat-4@2x.png" 2x, "../../img/piece-meat-4.webp" 1x, "../../img/piece-meat-4@2x.webp" 2x);
+        background-image: image-set("/img/piece-meat-4@1x.png" 1x, "/img/piece-meat-4@2x.png" 2x, "/img/piece-meat-4@1x.webp" 1x, "/img/piece-meat-4@2x.webp" 2x);
       }
     }
 
@@ -284,7 +286,7 @@
     
       &::before {
         margin-left: -107px;
-        background-image: image-set("../../img/piece-meat-11.png" 1x, "../../img/piece-meat-11@2x.png" 2x, "../../img/piece-meat-11.webp" 1x, "../../img/piece-meat-11@2x.webp" 2x);
+        background-image: image-set("/img/piece-meat-11@1x.png" 1x, "/img/piece-meat-11@2x.png" 2x, "/img/piece-meat-11@1x.webp" 1x, "/img/piece-meat-11@2x.webp" 2x);
       }
     }
 
@@ -295,7 +297,7 @@
 
       &::before {
         margin-left: 280px;
-        background-image: image-set("../../img/piece-meat-5.png" 1x, "../../img/piece-meat-5@2x.png" 2x, "../../img/piece-meat-5.webp" 1x, "../../img/piece-meat-5@2x.webp" 2x);
+        background-image: image-set("/img/piece-meat-5@1x.png" 1x, "/img/piece-meat-5@2x.png" 2x, "/img/piece-meat-5@1x.webp" 1x, "/img/piece-meat-5@2x.webp" 2x);
       }
     }
 
@@ -306,7 +308,7 @@
 
       &::before {
         margin-left: -107px;
-        background-image: image-set("../../img/piece-meat-10.png" 1x, "../../img/piece-meat-10@2x.png" 2x, "../../img/piece-meat-10.webp" 1x, "../../img/piece-meat-10@2x.webp" 2x);
+        background-image: image-set("/img/piece-meat-10@1x.png" 1x, "/img/piece-meat-10@2x.png" 2x, "/img/piece-meat-10@1x.webp" 1x, "/img/piece-meat-10@2x.webp" 2x);
       }
     }
 
@@ -317,7 +319,7 @@
 
       &::before {
         margin-left: 280px;
-        background-image: image-set("../../img/piece-meat-6.png" 1x, "../../img/piece-meat-6@2x.png" 2x, "../../img/piece-meat-6.webp" 1x, "../../img/piece-meat-6@2x.webp" 2x);
+        background-image: image-set("/img/piece-meat-6@1x.png" 1x, "/img/piece-meat-6@2x.png" 2x, "/img/piece-meat-6@1x.webp" 1x, "/img/piece-meat-6@2x.webp" 2x);
       }
     }
 
@@ -328,7 +330,7 @@
 
       &::before {
         margin-left: -107px;
-        background-image: image-set("../../img/piece-meat-9.png" 1x, "../../img/piece-meat-9@2x.png" 2x, "../../img/piece-meat-9.webp" 1x, "../../img/piece-meat-9@2x.webp" 2x);
+        background-image: image-set("/img/piece-meat-9@1x.png" 1x, "/img/piece-meat-9@2x.png" 2x, "/img/piece-meat-9@1x.webp" 1x, "/img/piece-meat-9@2x.webp" 2x);
       }
     }
 
@@ -338,7 +340,7 @@
 
       &::before {
         margin-left: 280px;
-        background-image: image-set("../../img/piece-meat-7.png" 1x, "../../img/piece-meat-7@2x.png" 2x, "../../img/piece-meat-7.webp" 1x, "../../img/piece-meat-7@2x.webp" 2x);
+        background-image: image-set("/img/piece-meat-7@1x.png" 1x, "/img/piece-meat-7@2x.png" 2x, "/img/piece-meat-7@1x.webp" 1x, "/img/piece-meat-7@2x.webp" 2x);
       }
     }
 
@@ -349,7 +351,7 @@
 
       &::before {
         margin-left: -110px;
-        background-image: image-set("../../img/piece-meat-8.png" 1x, "../../img/piece-meat-8@2x.png" 2x, "../../img/piece-meat-8.webp" 1x, "../../img/piece-meat-8@2x.webp" 2x);
+        background-image: image-set("/img/piece-meat-8@1x.png" 1x, "/img/piece-meat-8@2x.png" 2x, "/img/piece-meat-8@1x.webp" 1x, "/img/piece-meat-8@2x.webp" 2x);
       }
 
       br {
@@ -391,7 +393,7 @@
       display: block;
       width: 588px;
       height: 318px;
-      background-image: image-set("../../img/big-pig.png" 1x, "../../img/big-pig@2x.png" 2x, "../../img/big-pig.webp" 1x, "../../img/big-pig@2x.webp" 2x);
+      background-image: image-set("/img/big-pig@1x.png" 1x, "/img/big-pig@2x.png" 2x, "/img/big-pig@1x.webp" 1x, "/img/big-pig@2x.webp" 2x);
       background-repeat: no-repeat;
     }
   }
@@ -442,13 +444,14 @@
     background-color: $base-alt;
   }
 
-  h3{
+  h3 {
     width: 150px;
     margin: 0;
     font-weight: 500;
     font-size: 14px;
     line-height: 18.2px;
     text-align: center;
+    cursor: pointer;
   }
 
   h3:nth-child(2) {

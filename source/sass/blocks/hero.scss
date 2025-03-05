@@ -12,7 +12,7 @@
     left: 0;
     width: $min-width-mobile;
     height: 800px;
-    background-image: image-set("../../img/bg@1x.jpg" 1x, "../../img/bg@2x.jpg" 2x, "../../img/bg@1x.webp" 1x, "../../img/bg@2x.webp" 2x);
+    background-image: image-set("/img/bg@1x.jpg" 1x, "/img/bg@2x.jpg" 2x, "/img/bg@1x.webp" 1x, "/img/bg@2x.webp" 2x);
     background-repeat: no-repeat;
     z-index: -1;
   }
@@ -23,7 +23,7 @@
     &::before {
       width: $min-width-tablet;
       height: 1080px;
-      background-image: image-set("../../img/bg-tab@1x.jpg" 1x, "../../img/bg-tab@2x.jpg" 2x, "../../img/bg-tab@1x.webp" 1x, "../../img/bg-tab@2x.webp" 2x);
+      background-image: image-set("/img/bg-tab@1x.jpg" 1x, "/img/bg-tab@2x.jpg" 2x, "/img/bg-tab@1x.webp" 1x, "/img/bg-tab@2x.webp" 2x);
     }
   }
 }
@@ -36,7 +36,7 @@
   width: 36px;
   height: 36px;
   margin: 13px 1px 1px 14px;
-  background-image: image-set("../../img/meats@1x.png" 1x, "../../img/meats@2x.png" 2x, "../../img/meats@1x.webp" 1x, "../../img/meats@2x.webp" 2x);
+  background-image: image-set("/img/meats@1x.png" 1x, "/img/meats@2x.png" 2x, "/img/meats@1x.webp" 1x, "/img/meats@2x.webp" 2x);
   background-repeat: no-repeat;
   box-sizing: 36px 36px;
 
@@ -45,25 +45,25 @@
     height: 60px;
     margin: 0;
     display: block;
-    background-image: image-set("../../img/meats-mob@1x.png" 1x, "../../img/meats-mob@2x.png" 2x, "../../img/meats-mob@1x.webp" 1x, "../../img/meats-mob@2x.webp" 2x);
+    background-image: image-set("/img/meats-mob@1x.png" 1x, "/img/meats-mob@2x.png" 2x, "/img/meats-mob@1x.webp" 1x, "/img/meats-mob@2x.webp" 2x);
   }
 }
 
 .hero__svg--car {
   @media (min-width: $min-width-tablet) {
-    background-image: image-set("../../img/car@1x.png" 1x, "../../img/car@2x.png" 2x, "../../img/car@1x.webp" 1x, "../../img/car@2x.webp" 2x);
+    background-image: image-set("/img/car@1x.png" 1x, "/img/car@2x.png" 2x, "/img/car@1x.webp" 1x, "/img/car@2x.webp" 2x);
   }
 }
 
 .hero__svg--container {
   @media (min-width: $min-width-tablet) {
-    background-image: image-set("../../img/container@1x.png" 1x, "../../img/container@2x.png" 2x, "../../img/container@1x.webp" 1x, "../../img/container@2x.webp" 2x);
+    background-image: image-set("/img/container@1x.png" 1x, "/img/container@2x.png" 2x, "/img/container@1x.webp" 1x, "/img/container@2x.webp" 2x);
   }
 }
 
 .hero__svg--factory {
   @media (min-width: $min-width-tablet) {
-    background-image: image-set("../../img/factory@1x.png" 1x, "../../img/factory@2x.png" 2x, "../../img/factory@1x.webp" 1x, "../../img/factory@2x.webp" 2x);
+    background-image: image-set("/img/factory@1x.png" 1x, "/img/factory@2x.png" 2x, "/img/factory@1x.webp" 1x, "/img/factory@2x.webp" 2x);
   }
 }
 
@@ -154,6 +154,7 @@
   border: none;
   background: $base-dark;
   color: $base-light;
+  cursor: pointer;
 
   @media (min-width: $min-width-tablet) {
     font-size: 17.5px;
